@@ -6,7 +6,7 @@
 cp {filename}.py bin/{filename}
 ```
 
-## Make the file in the bin executable
+## Make the file in the bin folder executable
 
 ```
 chmod +x bin/{filename}
