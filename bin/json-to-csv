@@ -10,11 +10,11 @@ import os
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--file', action='store', type=str, help='path to json file', required=True)
-parser.add_argument('-s', '--sort', action='store', type=str, help='json key to sort value')
+parser.add_argument('-s', '--sort', action='store', type=str, help='json key to sort value', nargs='*')
 parser.add_argument('-sd', '--descending', action='store_true', help='sort descending')
-parser.add_argument('-hd', '--header', action='append', type=str, help='output headers')
-parser.add_argument('-o', '--output', action='append', type=str, help='json keys to output')
-parser.add_argument('-td', '--todate', action='append', type=str, help='json keys to transform to date')
+parser.add_argument('-hd', '--header', action='store', type=str, help='output headers', nargs='+')
+parser.add_argument('-o', '--output', action='store', type=str, help='json keys to output', nargs='+')
+parser.add_argument('-td', '--todate', action='store', type=str, help='json keys to transform to date', nargs='*')
 
 args = parser.parse_args()
 
