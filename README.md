@@ -12,6 +12,12 @@ cp {filename}.py bin/{filename}
 chmod +x bin/{filename}
 ```
 
+## Copy config file to bin folder
+
+```
+cp config/{filename} bin/config/{filename}
+```
+
 ### Add PATH to shell profile (bash / zsh)
 
 ```
