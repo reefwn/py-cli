@@ -3,8 +3,8 @@
 import webbrowser
 import argparse
 import json
-import os
 
+# use absolute path
 configfolder = 'config'
 configfile = '{}/browser.json'.format(configfolder)
 
