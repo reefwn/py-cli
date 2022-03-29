@@ -18,13 +18,13 @@ chmod +x bin/{filename}
 cp config/{filename} bin/config/{filename}
 ```
 
-### Add PATH to shell profile (bash / zsh)
+## Add PATH to shell profile (bash / zsh)
 
 ```
 export PATH=$PATH":$HOME/{path_to_this_repo}/bin"
 ```
 
-### Update shell profile with added PATH
+## Update shell profile with added PATH
 
 ```
 source ~/.{shell_profile}
