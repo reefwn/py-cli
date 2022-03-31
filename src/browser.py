@@ -5,7 +5,7 @@ import argparse
 import json
 
 # use absolute path
-configfolder = 'config'
+configfolder = '../config'
 configfile = '{}/browser.json'.format(configfolder)
 
 parser = argparse.ArgumentParser()
