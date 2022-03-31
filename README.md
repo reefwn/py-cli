@@ -3,7 +3,7 @@
 ## Copy file to bin folder
 
 ```
-cp {filename}.py bin/{filename}
+cp src/{filename}.py bin/{filename}
 ```
 
 ## Make the file in the bin folder executable
@@ -15,7 +15,7 @@ chmod +x bin/{filename}
 ## Copy config file to bin folder
 
 ```
-cp config/{filename} bin/config/{filename}
+cp src/config/{filename} bin/config/{filename}
 ```
 
 ## Add PATH to shell profile (bash / zsh)
