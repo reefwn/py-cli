@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import urllib.parse
 import requests
 import argparse
 import shutil
@@ -35,7 +36,7 @@ download = os.path.join(os.path.expanduser('~'), 'downloads')
 for i, d in enumerate(data):
     info = d[args.key] if args.key is not None else d
     name = d[args.name] if args.name is not None else 'qrcode-{}'.format(i)
-    url = 'https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl={}&choe=UTF-8&chld=L|1'.format(info)
+    url = 'https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl={}&choe=UTF-8&chld=L|1'.format(urllib.parse.quote(info))
 
     r = requests.post(url, stream=True)
     with open('{}/{}.png'.format(download, name), 'wb') as output:
